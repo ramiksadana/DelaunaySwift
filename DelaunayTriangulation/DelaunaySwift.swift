@@ -27,9 +27,9 @@ internal func supertriangle(_ points: [Point]) -> [Point] {
     let ymid = ymin + dy * 0.5
     
     return [
-        Point(x: xmid - 20 * dmax, y: ymid - dmax),
-        Point(x: xmid, y: ymid + 20 * dmax),
-        Point(x: xmid + 20 * dmax, y: ymid - dmax)
+        Point(x: xmid - 20 * dmax, y: ymid - dmax, index: -1),
+        Point(x: xmid, y: ymid + 20 * dmax, index: -1),
+        Point(x: xmid + 20 * dmax, y: ymid - dmax, index: -1)
     ]
 }
 
